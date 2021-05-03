@@ -27,7 +27,7 @@ def scrape_mars_news():
 
 def scrape_mars_facts():
     browser = init_browser()
-    facts_url = 'https://galaxyfacts-mars.com/
+    facts_url = 'https://galaxyfacts-mars.com/'
     mars_facts = pd.read_html(facts_url)
     mars_data = mars_df.to_html()
     mars_info['mars:facts'] = data
